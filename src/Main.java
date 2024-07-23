@@ -1,7 +1,20 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        // primitive values: byte, short, int, long, double, float, boolean, char
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+
+        int result = 1;
+
+        for (int i = 1; i<=b; i++) {
+            result *=a;
+        }
+
+        System.out.println(result);
+        scanner.close();
     }
 }
