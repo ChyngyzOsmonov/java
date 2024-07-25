@@ -1,7 +1,28 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import base_classes.Aircrafts;
+import birds.Eagle;
+import birds.Owl;
+import interfaces.Flyable;
+import planes.Helicopter;
+import planes.Plane;
+
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        // primitive values: byte, short, int, long, double, float, boolean, char
+        Eagle eagle = new Eagle();
+        Owl owl = new Owl();
+        Helicopter helicopter = new Helicopter();
+        Plane plane = new Plane();
+        Flyable[] arr = {eagle, owl, helicopter, plane};
+        callFly(arr);
+    }
+
+    public static void callFly(Flyable[] flyables) {
+        Arrays.stream(flyables).toList().forEach( (i) -> {
+            i.fly();
+            if (i instanceof Aircrafts) {
+                i.fly();
+            }
+        });
     }
 }
