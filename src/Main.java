@@ -19,7 +19,6 @@ public class Main {
 
     public static void callFly(Flyable[] flyables) {
         Arrays.stream(flyables).toList().forEach( (i) -> {
-            i.fly();
             if (i instanceof Aircrafts) {
                 i.fly();
             }
