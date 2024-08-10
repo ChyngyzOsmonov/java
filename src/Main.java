@@ -1,7 +1,9 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import homeTask1.Library;
+import homeTask2.ArrayHelper;
+
+import java.util.UUID;
+
 public class Main {
     public static void main(String[] args) {
-        // primitive values: byte, short, int, long, double, float, boolean, char
     }
 }
