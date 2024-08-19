@@ -2,6 +2,9 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        // primitive values: byte, short, int, long, double, float, boolean, char
+        Cat.sayMeaw2("aaa", String.class);
+        Store<String, Integer> store = new Store<>("Test", 0);
+
+        System.out.println(store);
     }
 }
