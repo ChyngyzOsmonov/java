@@ -1,7 +1,10 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        // primitive values: byte, short, int, long, double, float, boolean, char
+    public static void main(String[] args) throws InterruptedException {
+        for (int i = 0; i <= 0; i++) {
+            Cat cat = new Cat();
+            Thread thread = new Thread(cat);
+            Thread.sleep(5000);
+            thread.start();
+        }
     }
 }
